@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-xl text-slate-400 antialiased;
+  }
+}
+
+@layer components {
+  .section {
+    @apply relative mx-auto max-w-2xl px-4 py-12 sm:py-16 lg:max-w-6xl lg:py-24;
+  }
+  .sectionHeading {
+    @apply px-0 text-center text-3xl tracking-tighter text-white sm:px-4 sm:text-5xl;
+  }
+  .sectionDesc {
+    @apply mx-auto mt-5 max-w-3xl px-6 text-center text-xl leading-normal tracking-tight sm:mt-8 sm:text-2xl sm:leading-10;
+  }
+  .stackIcon {
+    @apply h-10 fill-slate-600 transition-all hover:fill-white sm:h-12;
+  }
+}
